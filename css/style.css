@@ -1,0 +1,552 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff');
+body{
+    background: #1F4690;
+    color: #fff;}
+
+body section{
+    height: 1000px;
+}
+
+h2{
+    text-align: center;
+    font-size: 68px;
+    padding-top: 40px;
+    font-weight: 300;
+}
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+}
+
+h1{padding: 30px 20px 20px 30px;}
+
+.gnb{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+}
+
+.gnb li{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* 클래스 on */
+.gnb li a.on{
+    font-weight: 700;
+}
+
+.gnb li a.on:before{
+    content: '#';
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+/* 클래스 active */
+header.active h1{
+    display: none;
+}
+
+
+header.active .gnb{
+    display: unset;
+    position: fixed;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+header.active .gnb li{
+    margin-bottom: 10px;
+}
+
+/* s1 */
+.s1 h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 100px;
+    letter-spacing: 5px;
+    width: 100%;
+}
+
+.s1 h2 span{
+    padding: 5px;
+    width: 220px;
+    height: 50px;
+    background-color: #fff;
+    color: #3A5BA0;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* s2 */
+.s2 .hWrap{
+    display: flex;
+    margin-top: 100px;
+    position: relative;
+}
+
+.s2 .con1{
+    text-align: right;
+    width: 30%;
+    margin-right: 100px;
+}
+
+.s2 img{height: 200px;}
+
+.hash{
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.hash li{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.con1 p{
+    line-height: 22px;
+}
+
+.con2 h3{
+    font-size: 24px;
+    font-weight: 300;
+    text-indent: -20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: unset;
+    text-align: unset;
+}
+
+.con2 p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 200;
+}
+
+.con2{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.s2 .item{
+    width: 350px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.s2 .item:nth-child(2){
+    width: 520px;
+}
+
+.s2 strong{
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 5px;
+}
+
+.s2 span{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    font-weight: 300;
+}
+
+/* wrap(s3, s4, s5) */
+h3{
+    font-size: 34px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 14px;
+    border-top: 2px solid #9CB4CC;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+}
+
+.wrap{
+    position: relative;
+    width: 100%;
+}
+
+.wrap .btn i{
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 450px);
+    transform: translate(-50%, -50%);
+}
+
+.wrap .btn .next i{
+    left: calc(50% + 450px);
+}
+
+/* web */
+.web{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.photo1{
+    width: 700px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.photo1 img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+article{
+    display: flex;
+    font-size: 18px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+article strong{
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.box{
+    line-height: 40px;
+    margin-right: 50px;
+}
+.box li{
+    display: flex;
+}
+
+.box strong{
+    display: inline-block;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.box span{
+    display: inline-block;
+}
+/* li 단어 각각 inline-block, 앞 단어에 width값 */
+.box li:nth-child(2) strong{
+    letter-spacing: 8px;
+}
+.box li:nth-child(3) strong{
+    letter-spacing: 22px;
+}
+.box li:last-child strong{
+    letter-spacing: 22px;
+}
+.color{
+    display: flex;
+    align-items: center;
+}
+.color li{
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+.color1 li:first-child{background-color: #fff;}
+.color1 li:nth-child(2){background-color: #363636;}
+.color1 li:last-child{background-color: #3723fe;}
+
+.boxL p{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.boxL span{
+    display: block;
+}
+
+.boxL span:nth-child(2){
+    margin: 10px 0;
+}
+/* web1 */
+.web2{
+    display: none;
+}
+
+/* app */
+.app{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app h4{
+    margin-top: unset;
+    margin-bottom: 10px;
+}
+.photo2{
+    height: 600px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.photo2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.app article{
+    display: unset;
+    margin-top: 20px;
+    justify-content: unset;
+}
+.app .box{
+    margin-bottom: 20px;
+}
+
+.color2 li:first-child{background: #333333}
+.color2 li:nth-child(2){background: #df8d00;}
+.color2 li:last-child{background: #eb525f;}
+
+.s4 .btn i{
+    top: 50%;
+    left: 22%;
+}
+
+.s4 .btn .next i{
+    left: unset;
+    right: 20%;
+}
+/* res */
+.res figure{
+    text-align: center;
+}
+
+.photo3 img:first-child{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 75px;
+    margin-right: 50px;
+}
+
+.photo3 img:last-child{
+    width: 200px;
+    height: 300px;
+}
+
+.photo3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.color3 li:first-child{background-color: #fff;}
+.color3 li:nth-child(2){background-color: #e7eb79;}
+.color3 li:last-child{background-color: #4e9b4a;}
+
+/* s6 s7 */
+.gal{
+    width: 1400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.itemA, .itemB, .itemC{
+    width: 400px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+}
+
+.txt{
+    padding: 10px 10px 20px 10px;
+    text-align: center;
+}
+
+.txt p{margin-top: 5px;}
+
+.pic{
+    height: 160px;
+    overflow: hidden;
+}
+
+.pic img{width: 100%;}
+
+.s6 h4{font-size: 22px;}
+.s7 h4{font-size: 22px;}
+
+
+.view, .view2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: none;
+    z-index: 999;
+}
+
+.wrapClose{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btnClose{
+    width: 50px;
+    height: 50px;
+    background-color: unset;
+    border: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.btnClose span{
+    display: block;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 23px;
+    height: 14px;
+    background: #fff;
+}
+
+.btnClose span:first-child{transform: rotate(45deg);}
+.btnClose span:last-child{transform: rotate(-45deg);}
+
+/* s3-5 portfolio figure /s6 artwork figure */
+
+.s6 figure{
+    z-index: 3;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s6 figure img{
+    width: 100%;
+    display: block;
+}
+.s7 figure{
+    z-index: 3;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.s7 figure img{
+    width: 100%;
+    display: block;
+}
+
+.txtBox{
+    z-index: 999;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
+}
+
+.txtBox p{margin-top: 5px;}
+
+.vid{
+    height: 200px;
+    overflow: hidden;
+}
+
+.vid video{width: 100%;}
+
+/* s7 */
+.key{display: none;}
+
+/* figure iframe{} */
+
+.itemC .pic{
+    background-image: url(../images/test.PNG);
+}
+
+/* s8 */
+.inner{
+    width: 1400px;
+    height: 700px;
+    padding: 10px 0;
+    border: 3px solid #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    position: relative;
+}
+
+.inner img{
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    top: -30px;
+    left: -40px;
+}
+
+.inner p{
+    margin-left: 60%;
+    margin-bottom: 60px;
+}
+
+.name{
+    font-size: 70px;
+    font-weight: 500;
+    padding-top: 100px;
+    letter-spacing: 5px;
+    font-family: LeeSeoyun;
+
+}
+
+.info{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+footer{
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 200px;
+}
