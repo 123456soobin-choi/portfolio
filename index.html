@@ -168,7 +168,8 @@
             <figure>
                 <h4>대한민꾹</h4>
                 <div class="photo2">
-                    <a href="#"><img src="images/app.PNG"></a>
+                    <a href="../app/index.html" target="_blank">
+                        <img src="images/app.PNG"></a>
                 </div>
             </figure>
             <article>
@@ -228,9 +229,9 @@
             <figure>
                 <h4>Aromatica</h4>
                 <div class="photo3">
-                    <a href="#">
-                        <img src="images/res.jpg">
-                        <img src="images/res2.jpg">
+                    <a href="../aromatica/index.html" target="_blank">
+                        <img src="images/aroma.PNG">
+                        <img src="images/aroma2.PNG">
                     </a>
                 </div>
             </figure>
@@ -384,7 +385,7 @@
 
         </div> <!-- view -->
         <div class="gal">
-            <div class="itemB">
+            <!-- <div class="itemB">
                 <div class="vid">
                     <video muted>
                         <source src="videos/vid1.mp4">
@@ -416,10 +417,10 @@
                     <h4>세 번째 비디오입니다</h4>
                     <p>비디오 관련 설명</p>
                 </div>
-            </div>
+            </div> -->
             <div class="itemC">
                 <a href="#">
-                    <span class="key">WjFNynfvvww</span>
+                    <span class="key">oTMLXi5gHqg</span>
                     <div class="pic"></div>
                     <div class="txt">
                         <h4>유튜브 1</h4>
@@ -567,37 +568,37 @@
         });
 
         //video
-        $('.itemB').on('mouseover',function(){
-            let vid = $(this).find('video').get(0);
-            vid.play();
-            vid.currentTime = 0;
-        }).on('mouseout',function(){
-            let vid = $(this).find('video').get(0);
-            vid.pause();
-        });
+        // $('.itemB').on('mouseover',function(){
+        //     let vid = $(this).find('video').get(0);
+        //     vid.play();
+        //     vid.currentTime = 0;
+        // }).on('mouseout',function(){
+        //     let vid = $(this).find('video').get(0);
+        //     vid.pause();
+        // });
 
-        $('.itemB').on('click',function(e){
-            e.preventDefault(); 
-            $('.view2').fadeIn();
+        // $('.itemB').on('click',function(e){
+        //     e.preventDefault(); 
+        //     $('.view2').fadeIn();
             
-            let vid = $(this).find('video').html();
-            $('.view2').find('figure')
-            .append(`<video muted>${vid}</video>`);
+        //     let vid = $(this).find('video').html();
+        //     $('.view2').find('figure')
+        //     .append(`<video muted>${vid}</video>`);
 
-            $('.view2').find('video').get(0).play();
+        //     $('.view2').find('video').get(0).play();
 
-            let h4Txt = $(this).find('h4').text();
-            let pTxt = $(this).find('p').text();
+        //     let h4Txt = $(this).find('h4').text();
+        //     let pTxt = $(this).find('p').text();
 
-            $('.view2').find('h4').text(h4Txt);
-            $('.view2').find('p').text(pTxt);
+        //     $('.view2').find('h4').text(h4Txt);
+        //     $('.view2').find('p').text(pTxt);
 
-        });
+        // });
 
-        $('.btnClose, .wrapClose').on('click',function(){
-           $('.view2').fadeOut();
-           $('.view2').find('video').remove(); 
-        });
+        // $('.btnClose, .wrapClose').on('click',function(){
+        //    $('.view2').fadeOut();
+        //    $('.view2').find('video').remove(); 
+        // });
 
 
         $('.itemC').on('click',function(e){
