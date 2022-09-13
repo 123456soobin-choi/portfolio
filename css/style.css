@@ -388,12 +388,14 @@ article strong{
     box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
 }
 
-.itemC{
+.itemB, .itemC {
     width: 400px;
-    margin-top: 120px;
+    margin-top: 40px;
     overflow: hidden;
-    box-shadow: 4px 4px 16px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 16px rgb(0 0 0 / 30%);
 }
+
+
 
 .txt{
     padding: 10px 10px 20px 10px;
@@ -470,6 +472,7 @@ article strong{
     width: 100%;
     display: block;
 }
+
 .s7 figure{
     z-index: 3;
     position: absolute;
@@ -480,9 +483,12 @@ article strong{
 }
 
 .s7 figure img{
+    text-align: center;
     width: 100%;
     display: block;
 }
+
+
 
 .txtBox{
     z-index: 999;
@@ -513,6 +519,15 @@ article strong{
     background-position: center center;
     background-size: cover;
 }
+
+.itemC .picC2{
+    background-image: url(../images/vid2.PNG);
+}
+
+.itemC .picC3{
+    background-image: url(../images/vid3.PNG);
+}
+
 
 /* s8 */
 .inner{

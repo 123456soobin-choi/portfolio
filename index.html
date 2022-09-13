@@ -385,7 +385,7 @@
 
         </div> <!-- view -->
         <div class="gal">
-            <!-- <div class="itemB">
+            <div class="itemB">
                 <div class="vid">
                     <video muted>
                         <source src="videos/vid1.mp4">
@@ -399,7 +399,7 @@
             <div class="itemB">
                 <div class="vid">
                     <video muted>
-                        <source src="videos/vid1.mp4">
+                        <source src="videos/vid2.mp4">
                     </video>
                 </div>
                 <div class="txt">
@@ -410,18 +410,18 @@
             <div class="itemB">
                 <div class="vid">
                     <video muted>
-                        <source src="videos/vid1.mp4">
+                        <source src="videos/vid3.mp4">
                     </video>
                 </div>
                 <div class="txt">
                     <h4>세 번째 비디오입니다</h4>
                     <p>비디오 관련 설명</p>
                 </div>
-            </div> -->
+            </div>
             <div class="itemC">
                 <a href="#">
-                    <span class="key">oTMLXi5gHqg</span>
-                    <div class="pic"></div>
+                    <span class="key">JoPp9wVNIVk</span>
+                    <div class="pic picC1"></div>
                     <div class="txt">
                         <h4>유튜브 1</h4>
                         <P>영상내용</P>
@@ -430,8 +430,8 @@
             </div>
             <div class="itemC">
                 <a href="#">
-                    <span class="key">WjFNynfvvww</span>
-                    <div class="pic"></div>
+                    <span class="key">3C8aPwQl1NE</span>
+                    <div class="pic picC2"></div>
                     <div class="txt">
                         <h4>유튜브2</h4>
                         <P>영상내용</P>
@@ -440,8 +440,8 @@
             </div>
             <div class="itemC">
                 <a href="#">
-                    <span class="key">WjFNynfvvww</span>
-                    <div class="pic"></div>
+                    <span class="key">xlKR9Z2ILe0</span>
+                    <div class="pic picC3"></div>
                     <div class="txt">
                         <h4>유튜브3</h4>
                         <P>영상내용</P>
@@ -567,38 +567,38 @@
             $('.view').fadeOut();
         });
 
-        //video
-        // $('.itemB').on('mouseover',function(){
-        //     let vid = $(this).find('video').get(0);
-        //     vid.play();
-        //     vid.currentTime = 0;
-        // }).on('mouseout',function(){
-        //     let vid = $(this).find('video').get(0);
-        //     vid.pause();
-        // });
+        // video
+        $('.itemB').on('mouseover',function(){
+            let vid = $(this).find('video').get(0);
+            vid.play();
+            vid.currentTime = 0;
+        }).on('mouseout',function(){
+            let vid = $(this).find('video').get(0);
+            vid.pause();
+        });
 
-        // $('.itemB').on('click',function(e){
-        //     e.preventDefault(); 
-        //     $('.view2').fadeIn();
+        $('.itemB').on('click',function(e){
+            e.preventDefault(); 
+            $('.view2').fadeIn();
             
-        //     let vid = $(this).find('video').html();
-        //     $('.view2').find('figure')
-        //     .append(`<video muted>${vid}</video>`);
+            let vid = $(this).find('video').html();
+            $('.view2').find('figure')
+            .append(`<video muted>${vid}</video>`);
 
-        //     $('.view2').find('video').get(0).play();
+            $('.view2').find('video').get(0).play();
 
-        //     let h4Txt = $(this).find('h4').text();
-        //     let pTxt = $(this).find('p').text();
+            let h4Txt = $(this).find('h4').text();
+            let pTxt = $(this).find('p').text();
 
-        //     $('.view2').find('h4').text(h4Txt);
-        //     $('.view2').find('p').text(pTxt);
+            $('.view2').find('h4').text(h4Txt);
+            $('.view2').find('p').text(pTxt);
 
-        // });
+        });
 
-        // $('.btnClose, .wrapClose').on('click',function(){
-        //    $('.view2').fadeOut();
-        //    $('.view2').find('video').remove(); 
-        // });
+        $('.btnClose, .wrapClose').on('click',function(){
+           $('.view2').fadeOut();
+           $('.view2').find('video').remove(); 
+        });
 
 
         $('.itemC').on('click',function(e){
